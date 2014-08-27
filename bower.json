@@ -1,7 +1,7 @@
 {
   "name": "sjoh",
   "main": "sjoh.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     "Nicolas Vanhoren <nicolas.vanhoren@gmail.com>"
   ],
@@ -14,5 +14,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "underscore": "~1.7.0"
+  }
 }
