@@ -30,9 +30,6 @@
             this.month = month; // 0-11
             this.date = date; // 1-31
         },
-        toMoment: function() {
-            return moment(this.toJsDate());
-        },
         toJsDate: function() {
             return new Date(this.fullYear, this.month, this.date);
         },
