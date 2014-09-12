@@ -65,7 +65,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             return new sjoh.Date(dictionary["year"], dictionary["month"] - 1, dictionary["day"]);
         },
         toJson: function(obj) {
-            return {"year": obj.fullYear, "month": obj.month + 1, "date": obj.date};
+            return {"year": obj.fullYear, "month": obj.month + 1, "day": obj.date};
         }
     });
 
@@ -136,7 +136,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             if (value)
                 return value;
             else
-                throw new sjoh.JsonSerializerException("Impossible to serialize object ", data);
+                throw new sjoh.JsonSerializerException("Impossible to serialize object " + data);
         },
         fromJsonTypes: function(data) {
             var self = this;
